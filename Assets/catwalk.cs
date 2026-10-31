@@ -36,14 +36,14 @@ public class catwalk : MonoBehaviour
         RB.linearVelocity = vel;
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
+   void OnCollisionEnter2D(Collision2D other) 
+   { 
+   
         
             if (other.gameObject.CompareTag("Cat Food"))
             {
                 Destroy(other.gameObject);
             }
+   }
 
-        
-    }
 }
